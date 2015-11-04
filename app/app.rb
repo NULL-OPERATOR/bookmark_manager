@@ -4,6 +4,11 @@ require 'sinatra/base'
 require_relative 'data_mapper_setup'
 
 class BookmarkManager < Sinatra::Base
+
+  get '/' do
+    redirect :links
+  end
+
   get '/links' do
     @links = Bookmark.all
     erb :'links/index'
