@@ -1,9 +1,9 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
 gem "data_mapper"
-gem "capybara"
+gem "dm-postgres-adapter"
 gem "rspec"
+gem "capybara"
 gem "rspec-sinatra"
 gem "sinatra"
-gem 'data_mapper'
-gem 'dm-postgres-adapter'
+gem "database_cleaner"
