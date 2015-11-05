@@ -5,9 +5,11 @@
   <li>
     Title: <%= link.name %>
     URL: <%= link.url %>
+    TAG: <%= link.tags.first %>
   </li>
   <% end %>
 </ul>
+
 <div>
   <form action="/links/new">
     <input type="submit" value="Create link">
